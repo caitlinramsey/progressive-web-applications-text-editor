@@ -1,18 +1,19 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "description": "A text editor that meets the PWA criteria and features a number of data persistence techniques that serve as redundancy in case of options is not supported by the browser.  The application will also be able to function offline",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "dev": "webpack-dev-server",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Caitlin Ramsey",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0",
@@ -27,5 +28,13 @@
     "webpack": "^5.88.2",
     "webpack-dev-server": "^4.15.1",
     "webpack-pwa-manifest": "^4.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitlinramsey/progressive-web-applications-text-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caitlinramsey/progressive-web-applications-text-editor/issues"
+  },
+  "homepage": "https://github.com/caitlinramsey/progressive-web-applications-text-editor#readme"
 }
