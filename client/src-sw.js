@@ -1,5 +1,5 @@
 const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
-const { CacheFirst, StaleWhileRevalidated } = require('workbox-strategies');
+const { CacheFirst, StaleWhileRevalidate } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
@@ -31,7 +31,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 registerRoute(
   // Define the callback function that will filter the requests to be cached
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
-  new StaleWhileRevalidated({
+  new StaleWhileRevalidate({
     // Name of cache storage
     cacheName: 'asset-cache',
      plugins: [
