@@ -33,4 +33,4 @@ GitHub: https://github.com/caitlinramsey/progressive-web-applications-text-edito
 Email: caitlinramsey@outlook.com
 
 ## Deployed Application
-The deployed application can viewed [here]().
+The deployed application can viewed [here](https://github.com/caitlinramsey/progressive-web-applications-text-editor).
