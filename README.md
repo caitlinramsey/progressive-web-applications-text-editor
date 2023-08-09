@@ -15,7 +15,7 @@ Just Another Text Editor is a single-page progressive web application where a us
 - [Deployed Application](#deployed-application)
 
 ## Installation
-The user should navigate to [here](https://cr-just-another-text-editor-b46859999ade.herokuapp.com/) and use the application there. Additionally, once at the deployed application, the user can install the application and use it on their computer. 
+The user should navigate [here](https://cr-just-another-text-editor-b46859999ade.herokuapp.com/) and use the application there. Additionally, once at the deployed application, the user can install the application and use it on their computer. 
 
 ## Usage
 This application is meant to be used by anyone who would like a reliable place to store notes and code snippets.
@@ -33,4 +33,4 @@ GitHub: https://github.com/caitlinramsey/progressive-web-applications-text-edito
 Email: caitlinramsey@outlook.com
 
 ## Deployed Application
-The deployed application can viewed [here]([https://github.com/caitlinramsey/progressive-web-applications-text-editor](https://cr-just-another-text-editor-b46859999ade.herokuapp.com/)https://cr-just-another-text-editor-b46859999ade.herokuapp.com/).
+The deployed application can viewed [here](https://cr-just-another-text-editor-b46859999ade.herokuapp.com/).
